@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Java Code Preview – GRAPH Folder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/dracula.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/monokai.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <h1>📁 GRAPH </h1>
+
+    <div class="file-list" id="fileList">
+        <div class="file-btn active" onclick="showCode('GraphMain', this)">GraphMain.java</div>
+        <div class="file-btn" onclick="showCode('GraphUsingAdjMatrix', this)">GraphUsingAdjMatrix.java</div>
+        <div class="file-btn" onclick="showCode('GraphUsingEdgeList', this)">GraphUsingEdgeList.java</div>
+    </div>
+
+    <div class="navigation-buttons">
+        <div class="nav-btn-container"><a href="../template/BINARY_SEARCH_TREE.html"><button class="nav-btn"><i
+                        class="fas fa-chevron-left"></i> Prev</button></a>
+        </div>
+        <div class="nav-btn-container"><a href="../index.html"><button class="nav-btn"><i class="fas fa-home"></i>
+                    Home</button></a>
+        </div>
+        <div class="nav-btn-container"><a href="../template/GREEDY_ALGO.html"><button class="nav-btn">Next <i
+                        class="fas fa-chevron-right"></i></button></a>
+        </div>
+    </div>
+
+    <div class="code-container">
+        <div class="editor-header">
+            <h3 id="fileName">GraphMain.java</h3>
+            <div class="editor-actions">
+                <i id="download-btn" class="icon-btn fa-solid fa-download" onclick="downloadCode()"></i>
+                <i id="copy-btn" class="icon-btn fa-solid fa-copy" onclick="copyCode()"></i>
+                <i id="theme-btn" class="icon-btn theme-switcher-icon fa-solid fa-moon" onclick="toggleTheme()"></i>
+            </div>
+        </div>
+        <textarea id="codeEditor"></textarea>
+    </div>
+
+    <div class="action-buttons">
+        <button class="run-btn" onclick="runCode()">Run Code</button>
+    </div>
+
+    <h2>Output</h2>
+    <hr>
+    <div class="output-container">
+        <pre id="outputBlock">Click 'Run Code' to see the output...</pre>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/clike/clike.min.js"></script>
+    <script src="../script/common.js"></script>
+    <script src="../script/graph.js"></script>
+</body>
+
+</html>

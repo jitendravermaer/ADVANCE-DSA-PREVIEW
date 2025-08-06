@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/dracula.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/monokai.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>DSA Folder Structure</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f0f0f;
+            color: white;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 24px;
+            color: #ffa726;
+        }
+
+        .folder-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .folder {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 14px;
+            padding: 20px 10px;
+            text-align: center;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            width: 180px;
+            /* Fixed width */
+            height: 140px;
+            /* Fixed height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .folder:hover {
+            background-color: #2b2b2b;
+            transform: translateY(-3px) scale(1.02);
+            cursor: pointer;
+        }
+
+        .folder .icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .folder span {
+            font-size: 15px;
+            word-break: break-word;
+            text-align: center;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #444;
+            margin: 10px 0 30px;
+        }
+
+        @media (max-width: 600px) {
+            .folder {
+                width: 140px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1><i class="fa-brands fa-java"></i> ADVANCE DSA WITH JAVA <i class="icon-btn fa-solid fa-code"></i></h1>
+
+    <h2>Foundational Concepts & Data Structures</h2>
+    <hr>
+    <div class="folder-grid">
+        <a href="template/ARRAYS.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>ARRAYS</span>
+            </div>
+        </a>
+        <a href="template/twoDArrays.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>2D ARRAYS</span>
+            </div>
+        </a>
+        <a href="template/DYNAMIC_ARRAY.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>DYNAMIC ARRAY</span>
+            </div>
+        </a>
+        <a href="template/ARRAY_LIST.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>ARRAY LIST</span>
+            </div>
+        </a>
+        <a href="template/LINKED_LIST.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>LINKED LIST</span>
+            </div>
+        </a>
+        <a href="template/STACK.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>STACK</span>
+            </div>
+        </a>
+        <a href="template/QUEUE.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>QUEUE</span>
+            </div>
+        </a>
+        <a href="template/DEQUE.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>DEQUE</span>
+            </div>
+        </a>
+        <a href="template/SET.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>SET</span>
+            </div>
+        </a>
+        <a href="template/MAP.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>MAP</span>
+            </div>
+        </a>
+    </div>
+
+    <h2>Intermediate Data Structures & Algorithms</h2>
+    <hr>
+    <div class="folder-grid">
+        <a href="template/SORTING.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>SORTING</span>
+            </div>
+        </a>
+        <a href="template/TREE.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>TREE</span>
+            </div>
+        </a>
+        <a href="template/BINARY_SEARCH_TREE.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>BINARY SEARCH TREE</span>
+            </div>
+        </a>
+        <a href="template/GRAPH.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>GRAPH</span>
+            </div>
+        </a>
+    </div>
+
+    <h2>Advanced Algorithms</h2>
+    <hr>
+    <div class="folder-grid">
+        <a href="template/GREEDY_ALGO.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>GREEDY ALGO</span>
+            </div>
+        </a>
+        <a href="template/DIJKSTRA'S_ALGO.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>DIJKSTRA'S ALGO</span>
+            </div>
+        </a>
+        <a href="template/PRIM'S_ALGO.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>PRIM'S ALGO</span>
+            </div>
+        </a>
+        <a href="template/KRUSKAL'S_ALGO.html" style="text-decoration: none; color: inherit;">
+            <div class="folder">
+                <div class="icon">📁</div>
+                <span>KRUSKAL'S ALGO</span>
+            </div>
+        </a>
+    </div>
+
+</body>
+
+</html>
